@@ -1,7 +1,7 @@
 ---
 title: Startup w weekend - no-code, AI i szybka walidacja
 created: 2026-06-17
-last_updated: 2026-06-19
+last_updated: 2026-06-20
 source_count: 2
 status: draft
 ---
@@ -24,7 +24,7 @@ Do szybkiego testowania landingow pojawiaja sie Carrd i Mobirise, do formularzy 
 
 Wazny wzorzec: [[prototypowanie]] ma byc tanie, szybkie i brzydkie, jesli trzeba. Skalowanie i czysta architektura przychodza pozniej, gdy projekt udowodni, ze rozwiazuje realny problem. [Zrodlo: youtube-dYzfArtf7qU-notatki.md]
 
-Podobny impuls widac w [[365-dni-commitowania]]: projekty i materialy do publicznego pokazywania powstaja przez regularne dowozenie, a nie przez czekanie na idealny plan. [Zrodlo: posat.md]
+Podobny impuls widac w [[365-dni-commitowania]]: projekty i materialy do publicznego pokazywania powstaja przez regularne dowozenie, a nie przez czekanie na idealny plan. [Zrodlo: posty.md]
 
 ## Watki do postow
 
