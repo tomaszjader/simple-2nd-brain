@@ -1,8 +1,8 @@
 ---
 title: Prompt engineering vs architektura agentow
 created: 2026-06-20
-last_updated: 2026-06-20
-source_count: 1
+last_updated: 2026-06-22
+source_count: 2
 status: draft
 ---
 
@@ -12,4 +12,6 @@ Post 17 pyta, czy prompt engineering jest juz przeszloscia, i przesuwa uwage na 
 
 Ten motyw wzmacnia [[skille-agentow-ai]], [[google-adk-vs-langchain]] i [[mcp-vs-rest-api]]. [Zrodlo: posty.md]
 
-Powiazania: [[skille-agentow-ai]], [[darmowy-kurs-agentow-ai]], [[google-adk-vs-langchain]].
+[[darmowy-kurs-agentow-ai-modul-mcp]] dodaje mocny wariant tej tezy: zamiast dorzucac kolejna instrukcje do promptu, warto projektowac system, ktory da sie rozwijac za miesiac. [Zrodlo: post.md]
+
+Powiazania: [[skille-agentow-ai]], [[darmowy-kurs-agentow-ai]], [[darmowy-kurs-agentow-ai-modul-mcp]], [[google-adk-vs-langchain]].

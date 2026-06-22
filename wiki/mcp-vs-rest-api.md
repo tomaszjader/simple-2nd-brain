@@ -1,8 +1,8 @@
 ---
 title: MCP vs REST API - standard integracji agentow
 created: 2026-06-20
-last_updated: 2026-06-20
-source_count: 1
+last_updated: 2026-06-22
+source_count: 2
 status: draft
 ---
 
@@ -15,6 +15,10 @@ Post 6 porownuje MCP z REST API i pyta, kiedy wybierac lokalne lub zdalne MCP za
 Post 33 pyta, czy MCP konczy ere recznego pisania wszystkiego w LangChainie, czyli przesuwa temat z teorii do praktyki frameworkow agentowych. [Zrodlo: posty.md]
 
 Post 41 zapowiada MCP jako kolejny modul kursu po RAG-u, co robi z MCP element wiekszej sciezki edukacyjnej. [Zrodlo: posty.md]
+
+Nowy wpis [[darmowy-kurs-agentow-ai-modul-mcp]] doprecyzowuje, ze MCP nie jest magicznym przyciskiem do robienia agentow, tylko standardem porzadkujacym rozmowe miedzy narzedziami, kontekstem i agentem. [Zrodlo: post.md]
+
+Wazny kontrast z nowego wpisu: zwykle API moze wystarczyc w prostych przypadkach, a MCP zaczyna miec sens tam, gdzie integracje, kontrakty narzedzi i debugowanie robia sie trudne do utrzymania. [Zrodlo: post.md]
 
 ## Ryzyko powtorki
 
