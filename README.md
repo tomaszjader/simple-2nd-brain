@@ -1,90 +1,61 @@
-# Jak uruchomić `create-simple-2nd-brain`
+# Drugi Mózg - Osobista Baza Wiedzy
 
-`create-simple-2nd-brain` to skill, który tworzy osobistą bazę wiedzy w stylu "drugiego mózgu". Zamiast zaczynać od zera przy każdym pytaniu, AI buduje i utrzymuje lokalne wiki na podstawie Twoich materiałów.
+To jest moja osobista baza wiedzy w stylu "second brain". Zamiast zaczynać od zera przy każdym pytaniu, AI buduje i utrzymuje lokalne wiki na podstawie moich materiałów źródłowych.
 
-## Jak zacząć
+## O tej bazie
 
-Sposób uruchomienia zależy od narzędzia, z którego korzystasz.
-
-### Opcja A: wklejenie skilla do asystenta
-
-Jeśli Twoje narzędzie pozwala wkleić plik skilla bezpośrednio do rozmowy, możesz użyć prostej komendy:
-
-```text
-Zainstaluj ten skill i utwórz bazę wiedzy [Nazwa Bazy]
-```
-
-### Opcja B: instalacja zgodnie z zasadami Twojego narzędzia
-
-Niektóre aplikacje AI mają własny sposób instalowania skilli lub uruchamiania komend. W takim przypadku postępuj zgodnie z dokumentacją swojego narzędzia i uruchom skill `create-simple-2nd-brain` w dostępny tam sposób.
-
-## Co dzieje się po uruchomieniu
-
-Skill nie tworzy bazy "w ciemno". Najpierw zada Ci kilka krótkich pytań onboardingowych, między innymi o:
-
-- temat bazy wiedzy,
-- Twoje zainteresowania w danym obszarze,
-- rodzaj materiałów, które będziesz dodawać,
-- preferowany styl komunikacji.
-
-Na podstawie tych odpowiedzi AI przygotuje strukturę katalogów, plik `AGENTS.md` i zestaw skilli do dalszej pracy z bazą.
+Baza skupia się na tematach związanych z:
+- **AI i Agentami**: MCP, LangChain, Google ADK, prompt engineering
+- **Automatyzacja**: n8n, workflow, narzędzia no-code
+- **Projekty**: pomysły na aplikacje, nauka angielskiego, automatyzacje osobiste
+- **Treści**: posty z LinkedIn, notatki z kursów i szkoleń
 
 ## Jak otworzyć bazę w Obsidianie
 
-Po zakończeniu instalacji:
-
 1. Otwórz aplikację Obsidian.
 2. Wybierz `Open folder as vault`.
-3. Wskaż katalog nowo utworzonej bazy.
+3. Wskaż ten katalog jako vault.
 
-To wystarczy, aby przeglądać wiki, korzystać z linków `[[wewnętrznych]]` i używać widoku grafu.
-
-## Jakie skille trafiają do bazy
-
-W katalogu `skills/` znajdziesz trzy sub-skille do codziennej pracy z wiedzą.
-
-## 1. `2nd-brain-ingest`
-
-Służy do dodawania nowych źródeł do bazy.
-
-**Jak działa:** wrzucasz plik do folderu `raw/`, a skill analizuje jego treść, aktualizuje istniejące strony wiki i tworzy nowe powiązania tam, gdzie to potrzebne.
-
-**Efekt:** wiedza z nowych materiałów trafia do `wiki/` w uporządkowanej formie, zamiast zostawać jako luźne notatki.
-
-## 2. `2nd-brain-query`
-
-Służy do zadawania pytań na podstawie zawartości bazy.
-
-**Jak działa:** skill przeszukuje `wiki/` i, jeśli trzeba, także `raw/`, a następnie przygotowuje odpowiedź opartą na zgromadzonych materiałach.
-
-**Efekt:** możesz szybko uzyskać syntezę tematu, porównanie źródeł albo odpowiedź na konkretne pytanie bez ręcznego przeglądania plików.
-
-## 3. `2nd-brain-lint`
-
-Służy do utrzymania jakości i spójności bazy.
-
-**Jak działa:** sprawdza wiki pod kątem martwych linków, osieroconych stron, niespójności i tematów, które warto lepiej połączyć lub uporządkować.
-
-**Efekt:** baza pozostaje czytelna, dobrze połączona i łatwiejsza do rozwijania wraz z czasem.
+Możesz przeglądać wiki, korzystać z linków `[[wewnętrznych]]` i używać widoku grafu.
 
 ## Struktura bazy
 
-Po instalacji baza będzie wyglądać mniej więcej tak:
-
 ```text
-twoja-baza/
-  ├── raw/         <- surowe materiały źródłowe
-  ├── wiki/        <- główna warstwa wiedzy budowana przez AI
-  ├── outputs/     <- raporty, odpowiedzi i syntezy warte zachowania
-  ├── skills/      <- sub-skille do pracy z bazą
-  └── AGENTS.md    <- zasady działania i konfiguracja bazy
+lama-isurence/
+  ├── raw/         <- surowe materiały źródłowe (obecnie puste)
+  ├── wiki/        <- główna warstwa wiedzy (50+ stron)
+  ├── outputs/     <- raporty, odpowiedzi i syntezy
+  ├── skills/      <- skille do pracy z bazą
+  └── AGENTS.md    <- zasady działania i konfiguracja
 ```
 
-## Jak z tego korzystać na co dzień 
+## Dostępne skille
 
-1. Dodawaj nowe materiały do `raw/`.
-2. Uruchamiaj `2nd-brain-ingest`, żeby włączyć je do wiki.
-3. Zadawaj pytania przez `2nd-brain-query`.
-4. Co jakiś czas uruchamiaj `2nd-brain-lint`, żeby sprawdzić jakość bazy.
+W katalogu `skills/` znajdziesz trzy sub-skille do codziennej pracy z wiedzą:
 
-To podejście działa najlepiej wtedy, gdy baza jest regularnie aktualizowana i traktowana jako robocza warstwa wiedzy, a nie tylko archiwum plików.
+### 1. `2nd-brain-ingest`
+Służy do dodawania nowych źródeł do bazy. Wrzucasz plik do `raw/`, a skill analizuje treść, aktualizuje wiki i tworzy powiązania.
+
+### 2. `2nd-brain-query`
+Służy do zadawania pytań na podstawie zawartości bazy. Przeszukuje `wiki/` i przygotowuje odpowiedzi oparte na zgromadzonych materiałach.
+
+### 3. `2nd-brain-lint`
+Służy do utrzymania jakości bazy. Sprawdza wiki pod kątem martwych linków, niespójności i sugeruje ulepszenia.
+
+## Jak korzystać z bazy
+
+1. **Dodawaj nowe materiały** do folderu `raw/`
+2. **Uruchamiaj `2nd-brain-ingest`** żeby włączyć je do wiki
+3. **Zadawaj pytania** przez `2nd-brain-query`
+4. **Regularnie uruchamiaj `2nd-brain-lint`** dla utrzymania jakości
+
+## Zawartość wiki
+
+Baza zawiera obecnie 50+ stron z wiedzą o:
+- Agentach AI i narzędziach (MCP, LangChain, Google ADK)
+- Automatyzacji (n8n, workflow)
+- Pomysłach na projekty (aplikacje, narzędzia)
+- Treściach z LinkedIn i kursów
+- Logu i raportach z lintowania
+
+Ostatnia aktualizacja: 2026-06-23
