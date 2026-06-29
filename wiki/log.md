@@ -12,3 +12,5 @@ Temat: LinkedIn baza postow i projektow. Gotowe na pierwsze zrodla.
 ## [2026-06-22] ingest | post.md - dodano nowy wpis o module MCP w kursie agentow AI i roli MCP w porzadkowaniu kontraktu miedzy agentem, narzedziami i kontekstem.
 ## [2026-06-22] explore | Polaczono nowy modul MCP z klastrem kursu agentow, MCP vs REST API, MCP w LangChainie oraz watkiem przejscia od prompt engineeringu do architektury agentow.
 ## [2026-06-23] lint | 22 problemow - szczegoly w wiki/lint-2026-06-23.md
+## [2026-06-28] ingest | post-testowanie-i-ewaluacja-ai.md - dodano lekcje o przypadkach testowych, kryteriach oceny, ewidencji eksperymentow i regresjach w systemach AI.
+## [2026-06-28] explore | Polaczono lekcje testowania i ewaluacji z seria kursu agentow AI oraz automatycznym sedzia AI z modulu RAG.

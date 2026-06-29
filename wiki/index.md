@@ -1,6 +1,6 @@
 # Indeks
 
-_Aktualizacja: 2026-06-22_
+_Aktualizacja: 2026-06-28_
 
 ## Nawyki, praktyka i publiczne budowanie
 
@@ -19,6 +19,7 @@ _Aktualizacja: 2026-06-22_
 - [[darmowy-kurs-agentow-ai-modul-2-adk]] - modul kursu o Google ADK, workflows, multi-agent i OpenAI jako dostawcy modelu.
 - [[darmowy-kurs-agentow-ai-modul-3-rag]] - modul kursu o RAG, Qdrant, LangChain, ADK i automatycznym sprawdzaniu zadania.
 - [[darmowy-kurs-agentow-ai-modul-mcp]] - modul kursu o MCP jako sposobie porzadkowania kontraktu miedzy agentem, narzedziami i kontekstem.
+- [[darmowy-kurs-agentow-ai-testowanie-i-ewaluacja]] - lekcja o przypadkach testowych, kryteriach, ewidencji wynikow i wykrywaniu regresji w systemach AI.
 - [[mcp-vs-rest-api]] - porownanie MCP, REST API i tool callingu jako watku architektury agentow.
 - [[mcp-i-langchain]] - praktyczny watek o MCP jako alternatywie dla recznego pisania integracji w LangChainie.
 - [[system-rag]] - klaster postow o RAG, embeddingach, Qdrant, LangChain, ADK i asystentach na wlasnej wiedzy.
